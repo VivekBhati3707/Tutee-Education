@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let student = ['mohan', 'sohan', 'johan', 'gohan', 'shailmann', 'alisha']
+        /* let student_details = {
+            name:'mohan',
+            class:'7th',
+            rollno:'45'
+
+        } */
+
+        /*  document.write(`My name is ${student[0]}  i am living in noida. my friend ${student[3]} <br> <hr>`)
+         document.write("My name is "+ student[1] + 'i am living in noida' + 'my friend' + student[3]) */
+
+
+        //student.forEach(forFun)
+
+        student.forEach(
+            function forFun(a, b) {
+                document.write(`My name is ${a}[${b}] <br>`)
+            });
+
+
+        function sum(a, b) {
+            return a + b
+        }
+        document.write(sum(5, 6) + '<br>');
+
+        <!-------------Number---------------------------->
+
+        //let number = [1,2,3,4,5,6,7,8,9,10,78,90]
+        /*   
+        number.forEach(
+           function evenadd (a,b) {
+               document.w
+           }
+
+        ) */
+        /*  number.forEach(function evenOdd(v,i){
+             if(v%2==0){
+                 document.write(number[i] +' => Even'+ '<br>')
+             }
+             else{
+                 document.write(number[i] +' => Odd'+ '<br>')
+             }
+         }) */
+
+        /*  <!--arrow function --> */
+        let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];  // Sample array of numbers
+
+        // Use forEach to loop through the 'number' array
+        /*  number.forEach(function (v, i) {
+             // Check if the number is even or odd
+             if (v % 2 === 0) {
+                 document.write(v + ' => Even' + '<br>');
+             } else {
+                 document.write(v + ' => Odd' + '<br>');
+             }
+         }); */
+
+        number.forEach(
+            (v, i) => {
+                if (v % 2 === 0) {
+                    document.write(v + ' => Even' + '<br>');
+                } else {
+                    document.write(v + ' => Odd' + '<br>');
+                }
+            }
+        )
+
+
+        /* for(let i = 0;i < number.length; i++){
+            if(number[i]%2 == 0){
+                document.write(number[i] +' => Even'+ '<br>')
+            }
+            else{
+                document.write(number[i] +' => Odd'+ '<br>')
+            }
+            
+        } */
+
+
+    </script>
+</body>
+
+</html>
